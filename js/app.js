@@ -10,15 +10,6 @@ form.addEventListener('submit', (event) => {
         alertMsg();
     }
 
-    const allColumns = document.querySelectorAll('.result-content .city');
-    console.log(allColumns);
-    allColumns.forEach(element => {
-        console.log(element.innerText);
-        if (element.innerText === inputCity.value) {
-            console.log(element.innerText);
-        }
-    })
-
     // API implementation
     const apiKey = '0f64feae080d47fe23304df7325e3bf6';
     const cityName = inputCity.value;
